@@ -7,15 +7,15 @@ type Props = {}
 
 const NavBar = (props: Props) => {
   return (
-    <header className='flex justify-between space-y-3 flex-col items-center md:flex-row shadow-xl py-2 ' >
+    <header className='flex justify-between space-y-3 flex-col items-center md:flex-row shadow-lg py-2 ' >
       <div className="logo mx-5 pt-2 flex items-center w-screen sm:w-fit sm:p-3.5 justify-around ">
-        <Image
+       <Link href={"/"} > <Image
         className='md:h-14 md:w-14 h-8 w-8   '
         src={logo}
         alt='logo'
         // height={10}
         // width={200}
-        />
+        /></Link>
         <div className='sm:hidden'  ><FiShoppingCart className="text-xl" /></div>
       </div>
       <div className="nav">
