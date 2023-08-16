@@ -1,11 +1,20 @@
+import Footer from '@/components/Footer'
+import NavBar from '@/components/NavBar'
 import { Inter } from 'next/font/google'
+import homeImg from "../public/home.jpg"
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
       <>
-      <h1 className='text-4xl' >thus is home page</h1>
+      <NavBar/>
+      <Image
+      src={homeImg}
+      alt='home image'
+      />
+      <Footer/>
       </>
     )
 }
