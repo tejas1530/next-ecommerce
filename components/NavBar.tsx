@@ -7,7 +7,7 @@ type Props = {}
 
 const NavBar = (props: Props) => {
   return (
-    <header className='flex justify-between space-y-3 flex-col items-center md:flex-row ' >
+    <header className='flex justify-between space-y-3 flex-col items-center md:flex-row shadow-xl py-2 ' >
       <div className="logo mx-5 pt-2 flex items-center w-screen sm:w-fit sm:p-3.5 justify-around ">
         <Image
         className='md:h-14 md:w-14 h-8 w-8   '
@@ -20,10 +20,10 @@ const NavBar = (props: Props) => {
       </div>
       <div className="nav">
          <ul className='flex space-x-9   ' >
-            <Link href={'/'} ><li>item 1</li></Link>
-            <Link href={'/'} ><li>item 2</li></Link>
-            <Link href={'/'} ><li>item 3</li></Link>
-            <Link href={'/'} ><li>item 4</li></Link>
+            <Link href={'/kurtis'} ><li>Kurtis</li></Link>
+            <Link href={'/jewelry'} ><li>Jewelry</li></Link>
+            <Link href={'/gowns'} ><li>Gowns</li></Link>
+            <Link href={'/palazzoSuits'} ><li>Palazzo Suits</li></Link>
          </ul>
       </div>
       <div className="cart md:mx-7 hidden sm:block  ">
