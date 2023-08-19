@@ -109,8 +109,9 @@ const NavBar = (props: Props) => {
             </div>
 					</li>
 				</ol>
-        <div className="flex justify-center mt-7 " >
-        <button className="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none flex hover:bg-pink-600 rounded text-lg w-[70%]  items-center text-center justify-center ">Check out{` `}<AiOutlineArrowRight className="mx-2 mt-1 " /></button>
+        <div className="flex justify-center items-center flex-col space-y-4 sm:space-y-0 sm:space-x-3 sm:flex-row mt-7 " >
+        <button className="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none flex hover:bg-pink-600 rounded text-lg w-[70%]  items-center text-center justify-center ">Clear Cart</button>
+        <button className="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none flex hover:bg-pink-600 rounded text-lg w-[70%]  items-center text-center justify-center ">Check out<AiOutlineArrowRight className="mx-2 mt-1 " /></button>
         </div>
 			</div>
 		</header>
